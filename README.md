@@ -5,6 +5,9 @@ The list does not focus on any particular topic, it is set of random websites th
 
 ### Websites:
 - [ASCIIFlow](http://asciiflow.com/) - Create infinite `ASCII` diagrams.
+- [AutoDraw](https://www.autodraw.com/) - Draw and use the magic of machine learning to help you create anything visual, fast.
+- [DeepL](https://www.deepl.com/translator) - Translate using machine translation service of unprecedented quality.
+- [draw.io](https://www.draw.io/) - Create flowcharts and diagrams.
 - [Gnoosic](http://www.gnoosic.com/) - Discover new music artists similar to your favourite.
 - [Infinite Jukebox](http://infinitejukebox.playlistmachinery.com/) - Generate a never-ending and ever changing version of your MP3.
 - [Library of Babel](https://libraryofbabel.info/) - Search through all possible pages of 3200 characters (lower case letters, space, comma, and period).
