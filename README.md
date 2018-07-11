@@ -14,5 +14,7 @@ The list does not focus on any particular topic, it is set of random websites th
 - [Library of Babel](https://libraryofbabel.info/) - Search through all possible pages of 3200 characters (lower case letters, space, comma, and period).
 - [Pantheon](http://pantheon.media.mit.edu/) - Interactive catalog of fame.
 - [PCjs Machines](https://www.pcjs.org/) - Collection of computer simulations written in JavaScript.
+- [regex101](https://regex101.com/) - Test and debug your regular expressions online.
+- [Regex Golf](https://alf.nu/RegexGolf) - Play game in which you have to match lists of text strings using a shortest possible regular expression.
 - [Text2ASCII](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) - Generate `ASCII` art from text.
 - [Wolfram|Alpha](http://www.wolframalpha.com/) - Compute answers using Wolfram's knowledgebase.
