@@ -10,6 +10,7 @@ The list does not focus on any particular topic, it is set of random websites th
 - [draw.io](https://www.draw.io/) - Create flowcharts and diagrams.
 - [Gnoosic](http://www.gnoosic.com/) - Discover new music artists similar to your favourite.
 - [Hacker Typer](http://hackertyper.com/) - Type like a hacker.
+- [Ideone](https://ideone.com/) - Online compiler and debugging tool.
 - [Infinite Jukebox](http://infinitejukebox.playlistmachinery.com/) - Generate a never-ending and ever changing version of your MP3.
 - [Library of Babel](https://libraryofbabel.info/) - Search through all possible pages of 3200 characters (lower case letters, space, comma, and period).
 - [Pantheon](http://pantheon.media.mit.edu/) - Interactive catalog of fame.
