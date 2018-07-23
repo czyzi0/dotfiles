@@ -8,6 +8,7 @@ The list does not focus on any particular topic, it is set of random websites th
 - [AutoDraw](https://www.autodraw.com/) - Draw and use the magic of machine learning to help you create anything visual, fast.
 - [DeepL](https://www.deepl.com/translator) - Translate using machine translation service of unprecedented quality.
 - [draw.io](https://www.draw.io/) - Create flowcharts and diagrams.
+- [DuckDuckGo](https://duckduckgo.com/) - Search engine that doesn't track you.
 - [Gnoosic](http://www.gnoosic.com/) - Discover new music artists similar to your favourite.
 - [Hacker Typer](http://hackertyper.com/) - Type like a hacker.
 - [Ideone](https://ideone.com/) - Online compiler and debugging tool.
