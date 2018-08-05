@@ -21,6 +21,7 @@ The list does not focus on any particular topic, it is set of random websites th
 - [Quick, Draw!](https://quickdraw.withgoogle.com/) - Help teach neural network by adding your drawings to the world’s largest doodling data set.
 - [regex101](https://regex101.com/) - Test and debug your regular expressions online.
 - [Regex Golf](https://alf.nu/RegexGolf) - Play game in which you have to match lists of text strings using a shortest possible regular expression.
+- [Teachable Machine](https://teachablemachine.withgoogle.com/) - Teach a machine using your camera live in the browser.
 - [Text2ASCII](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) - Generate `ASCII` art from text.
 - [Third Rock Radio](https://thirdrockradio.net/) - Explore and discover new worlds of music with NASA’s Third Rock Radio.
 - [Wayback Machine](https://archive.org/web/) - Internet archive where you can explore more than 334 billion web pages saved over time.
