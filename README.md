@@ -15,7 +15,9 @@ The list does not focus on any particular topic, it is set of random websites th
 - [Ideone](https://ideone.com/) - Online compiler and debugging tool.
 - [If the Moon Were Only 1 Pixel](http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html) - A tediously accurate scale model of the solar system.
 - [Infinite Jukebox](http://infinitejukebox.playlistmachinery.com/) - Generate a never-ending and ever changing version of your MP3.
+- [It's Nicky Case!](https://ncase.me/) - Interactive presentations about many topics.
 - [Library of Babel](https://libraryofbabel.info/) - Search through all possible pages of 3200 characters (lower case letters, space, comma, and period).
+- [Otchłań](http://www.otchlan.pl/) - Text-based game in Polish.
 - [Pantheon](http://pantheon.media.mit.edu/) - Interactive catalog of fame.
 - [PCjs Machines](https://www.pcjs.org/) - Collection of computer simulations written in JavaScript.
 - [Quick, Draw!](https://quickdraw.withgoogle.com/) - Help teach neural network by adding your drawings to the world’s largest doodling data set.
