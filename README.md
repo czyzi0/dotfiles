@@ -6,6 +6,7 @@ The list does not focus on any particular topic, it is set of random websites th
 ### Websites:
 - [ASCIIFlow](http://asciiflow.com/) - Create infinite `ASCII` diagrams.
 - [AutoDraw](https://www.autodraw.com/) - Draw and use the magic of machine learning to help you create anything visual, fast.
+- [codewars](https://www.codewars.com/) - Challenge yourself on many coding katas.
 - [CSS ICON](https://cssicon.space/#/) - Collection of animated icons created using only CSS.
 - [DeepL](https://www.deepl.com/translator) - Translate using machine translation service of unprecedented quality.
 - [draw.io](https://www.draw.io/) - Create flowcharts and diagrams.
