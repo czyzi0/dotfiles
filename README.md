@@ -8,6 +8,7 @@ The list does not focus on any particular topic, it is set of random websites th
 - [AutoDraw](https://www.autodraw.com/) - Draw and use the magic of machine learning to help you create anything visual, fast.
 - [codewars](https://www.codewars.com/) - Challenge yourself on many coding katas.
 - [CSS ICON](https://cssicon.space/#/) - Collection of animated icons created using only CSS.
+- [Dataset Search](https://toolbox.google.com/datasetsearch) - Search for datasets.
 - [DeepL](https://www.deepl.com/translator) - Translate using machine translation service of unprecedented quality.
 - [draw.io](https://www.draw.io/) - Create flowcharts and diagrams.
 - [DuckDuckGo](https://duckduckgo.com/) - Search engine that doesn't track you.
