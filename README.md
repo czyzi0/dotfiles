@@ -6,6 +6,8 @@ The list does not focus on any particular topic, it is set of random websites th
 ### Websites:
 - [ASCIIFlow](http://asciiflow.com/) - Create infinite `ASCII` diagrams.
 - [AutoDraw](https://www.autodraw.com/) - Draw and use the magic of machine learning to help you create anything visual, fast.
+- [Character Entity Reference Chart](https://dev.w3.org/html5/html-author/charref) - Chart with character entities.
+- [Conda](https://conda.io/docs/index.html) - Documentation for Conda (open source package management system for any language).
 - [codewars](https://www.codewars.com/) - Challenge yourself on many coding katas.
 - [CSS ICON](https://cssicon.space/#/) - Collection of animated icons created using only CSS.
 - [Dataset Search](https://toolbox.google.com/datasetsearch) - Search for datasets.
