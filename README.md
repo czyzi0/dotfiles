@@ -22,6 +22,7 @@ The list does not focus on any particular topic, it is set of random websites th
 - [Infinite Jukebox](http://infinitejukebox.playlistmachinery.com/) - Generate a never-ending and ever changing version of your MP3.
 - [It's Nicky Case!](https://ncase.me/) - Interactive presentations about many topics.
 - [Library of Babel](https://libraryofbabel.info/) - Search through all possible pages of 3200 characters (lower case letters, space, comma, and period).
+- [Noisli](https://www.noisli.com/) - Mix different sounds and create your perfect environment.
 - [Otchłań](http://www.otchlan.pl/) - Text-based game in Polish.
 - [Pantheon](http://pantheon.media.mit.edu/) - Interactive catalog of fame.
 - [PCjs Machines](https://www.pcjs.org/) - Collection of computer simulations written in JavaScript.
