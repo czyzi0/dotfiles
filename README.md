@@ -27,6 +27,7 @@ The list does not focus on any particular topic, it is set of random websites th
 - [Otchłań](http://www.otchlan.pl/) - Text-based game in Polish.
 - [Pantheon](http://pantheon.media.mit.edu/) - Interactive catalog of fame.
 - [PCjs Machines](https://www.pcjs.org/) - Collection of computer simulations written in JavaScript.
+- [Pokémon Showdown](https://pokemonshowdown.com/) - Pokémon battle simulator.
 - [Quick, Draw!](https://quickdraw.withgoogle.com/) - Help teach neural network by adding your drawings to the world’s largest doodling data set.
 - [regex101](https://regex101.com/) - Test and debug your regular expressions online.
 - [Regex Golf](https://alf.nu/RegexGolf) - Play game in which you have to match lists of text strings using a shortest possible regular expression.
