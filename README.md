@@ -20,7 +20,7 @@ The list does not focus on any particular topic, it is set of random websites th
 - [Hacker Typer](http://hackertyper.com/) - Type like a hacker.
 - [Ideone](https://ideone.com/) - Online compiler and debugging tool.
 - [If the Moon Were Only 1 Pixel](http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html) - A tediously accurate scale model of the solar system.
-- [Infinite Jukebox](http://infinitejukebox.playlistmachinery.com/) - Generate a never-ending and ever changing version of your MP3.
+- [~~Infinite~~ Eternal Jukebox](https://eternalbox.dev/retro_index.html) - Generate a never-ending and ever changing version of your song.
 - [It's Nicky Case!](https://ncase.me/) - Interactive presentations about many topics.
 - [Library of Babel](https://libraryofbabel.info/) - Search through all possible pages of 3200 characters (lower case letters, space, comma, and period).
 - [Noisli](https://www.noisli.com/) - Mix different sounds and create your perfect environment.
