@@ -23,6 +23,8 @@ The list does not focus on any particular topic, it is set of random websites th
 - [~~Infinite~~ Eternal Jukebox](https://eternalbox.dev/retro_index.html) - Generate a never-ending and ever changing version of your song.
 - [It's Nicky Case!](https://ncase.me/) - Interactive presentations about many topics.
 - [Library of Babel](https://libraryofbabel.info/) - Search through all possible pages of 3200 characters (lower case letters, space, comma, and period).
+- [MyAnimeList](https://myanimelist.net/) - World's largest anime and manga database and community.
+- [Nifty Assignments](http://nifty.stanford.edu/) - Great assignments ideas.
 - [Noisli](https://www.noisli.com/) - Mix different sounds and create your perfect environment.
 - [LOLCODE](http://www.lolcode.org/) - An esoteric programming language.
 - [Otchłań](http://www.otchlan.pl/) - Text-based game in Polish.
