@@ -43,6 +43,7 @@ The list does not focus on any particular topic, it is set of random websites th
 - [Third Rock Radio](https://thirdrockradio.net/) - Explore and discover new worlds of music with NASA’s Third Rock Radio.
 - [Velocity Raptor](https://www.testtubegames.com/velocityraptor.html) - Game with accurate simulation of physics near the speed of light.
 - [VIM Adventures](https://vim-adventures.com/) - Learn VIM while playing a game.
+- [Wallpaper Abyss](https://wall.alphacoders.com/) - Search for wallpapers.
 - [Wayback Machine](https://archive.org/web/) - Internet archive where you can explore more than 334 billion web pages saved over time.
 - [WebGL Rubik's Cube](http://www.randelshofer.ch/webgl/rubikscube/) - An interactive virtual Rubik's Cube written in JavaScript and WebGL.
 - [Wolfram|Alpha](http://www.wolframalpha.com/) - Compute answers using Wolfram's knowledgebase.
