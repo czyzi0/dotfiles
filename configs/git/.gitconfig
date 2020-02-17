@@ -1,0 +1,2 @@
+[alias]
+	tree = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%aD%C(reset) - %C(dim white)%an <%ae>%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n'''
