@@ -1,5 +1,5 @@
 # awesome-websites
-Curated list of awesome websites. 
+Curated list of awesome websites.
 
 The list does not focus on any particular topic, it is set of random websites that I've found interesting/useful.
 
