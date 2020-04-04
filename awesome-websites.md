@@ -6,6 +6,8 @@ The list does not focus on any particular topic, it is set of random websites th
 | Name | Description |
 | --- | --- |
 | [15.ai](https://fifteen.ai/) | TTS tool that you can use to generate 44.1 kHz voices of various characters |
+| [arXiv.org](https://arxiv.org/) | Open-access archive for more than 1.5M scholarly articles |
+| [Arxiv Sanity Preserver](https://www.arxiv-sanity.com/) | Alternative web interface for [arXiv.org](https://arxiv.org/) |
 | [ASCIIFlow](http://asciiflow.com/) | Create infinite `ASCII` diagrams |
 | [AutoDraw](https://www.autodraw.com/) | Draw and use the magic of machine learning to help you create anything visual |
 | [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page) | Community driven Pokémon encyclopedia |
