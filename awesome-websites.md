@@ -5,6 +5,7 @@ The list does not focus on any particular topic, it is set of random websites th
 
 | Name | Description |
 | --- | --- |
+| [15.ai](https://fifteen.ai/) | TTS tool that you can use to generate 44.1 kHz voices of various characters |
 | [ASCIIFlow](http://asciiflow.com/) | Create infinite `ASCII` diagrams |
 | [AutoDraw](https://www.autodraw.com/) | Draw and use the magic of machine learning to help you create anything visual |
 | [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page) | Community driven Pokémon encyclopedia |
@@ -17,6 +18,7 @@ The list does not focus on any particular topic, it is set of random websites th
 | [DeepL](https://www.deepl.com/translator) | Translate using machine translation service of unprecedented quality |
 | [draw.io](https://www.draw.io/) | Create flowcharts and diagrams |
 | [DuckDuckGo](https://duckduckgo.com/) | Search engine that doesn't track you |
+| [Excalidraw](https://excalidraw.com/) | Whiteboard tool that allows to easily sketch diagrams that have a hand-drawn feel to them |
 | [GeoGuessr](https://www.geoguessr.com/) | Guess where you are after being dropped somewhere in the world on Google Street View |
 | [Gnoosic](http://www.gnoosic.com/) | Discover new music artists similar to your favourite |
 | [Hacker Typer](http://hackertyper.com/) | Type like a hacker |
