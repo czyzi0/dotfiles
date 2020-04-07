@@ -1,11 +1,11 @@
 # things
 Repository with random things.
 
-### awesome-websites
-Curated list of awesome websites [[link](awesome-websites.md)].
+### [awesome-websites](awesome-websites.md)
+Curated list of awesome websites.
 
-### configs
-Various configuration files [[link](configs)].
+### [configs](configs)
+Various configuration files.
 
-### cheat-sheet
-Cheat sheet with some useful tips and tricks [[link](cheat-sheet.md)].
+### [cheat-sheet](cheat-sheet.md)
+Cheat sheet with some useful tips and tricks.
