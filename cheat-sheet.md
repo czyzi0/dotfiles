@@ -46,6 +46,18 @@ tar -czvf ${ARCHIVE} ${DIR}
 tar -xzvf ${ARCHIVE}
 ```
 
+### `tmux`
+```bash
+# List running sessions
+tmux ls
+
+# Attach to `SESSION`
+tmux attach -t ${SESSION}
+
+# Detach from session
+<Ctrl>+<b> <d>
+```
+
 ### `vim`
 ```bash
 # Search and replace in all lines
@@ -68,4 +80,7 @@ END
 
 # Create symbolic `LINK` to `DIR`
 ln -s ${DIR} ${LINK}
+
+# Check amount of free space on drives
+df -h
 ```
