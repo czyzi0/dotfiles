@@ -7,6 +7,12 @@ Cheat sheet with some useful tips and tricks.
 chown -R ${USER}:${GROUP} ${DIR}
 ```
 
+### `find`
+```bash
+# Find all files matching `PATTERN` in `DIR` and call basename on them
+find ${DIR} -name ${PATTERN} -exec basename {} \;
+```
+
 ### `git`
 ```bash
 # Squash previous `N` commits
@@ -17,6 +23,12 @@ git reset --hard HEAD~${N}
 
 # Show diff for given `COMMIT`
 git diff ${COMMIT}^!
+```
+
+### `grep`
+```bash
+# Find `PATTERN` in `DIR`
+grep -r ${PATTERN} ${DIR}
 ```
 
 ### `scp`
@@ -69,6 +81,9 @@ tmux attach -t ${SESSION}
 <Ctrl>+<w> <s>
 # Move focus to next split
 <Ctrl>+<w> <w>
+
+# Create file in netrw
+<%>
 ```
 
 ### others
@@ -83,4 +98,11 @@ ln -s ${DIR} ${LINK}
 
 # Check amount of free space on drives
 df -h
+# Check size of current directory
+du -hs
+# Check size of all files and directories in current directory
+du -hsc *
+
+# Count lines in `FILE`
+wc -l ${FILE}
 ```
