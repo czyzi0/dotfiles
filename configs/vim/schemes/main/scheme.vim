@@ -77,6 +77,8 @@ hi pythonDecorator                     ctermfg=160    ctermbg=NONE   cterm=NONE
 hi pythonDottedName                    ctermfg=51     ctermbg=NONE   cterm=NONE
 hi pythonExClass                       ctermfg=51     ctermbg=NONE   cterm=NONE
 hi pythonException                     ctermfg=160    ctermbg=NONE   cterm=NONE
+hi pythonFunction                      ctermfg=40     ctermbg=NONE   cterm=NONE
+hi pythonFunctionCall                  ctermfg=255    ctermbg=NONE   cterm=NONE
 hi pythonRun                           ctermfg=240    ctermbg=NONE   cterm=NONE
 
 " Bash
