@@ -21,6 +21,9 @@ git reset --soft HEAD~${N}
 # Delete last `N` commits
 git reset --hard HEAD~${N}
 
+# Reset `BRANCH` to origin
+git reset --hard origin/${BRANCH}
+
 # Show diff for given `COMMIT`
 git diff ${COMMIT}^!
 ```
@@ -29,6 +32,12 @@ git diff ${COMMIT}^!
 ```bash
 # Find `PATTERN` in `DIR`
 grep -r ${PATTERN} ${DIR}
+```
+
+### `sed`
+```bash
+# Search and replace "in place"
+sed -i -- 's,FROM,TO,g' ${FILE}
 ```
 
 ### `scp`
@@ -51,7 +60,7 @@ tail -n +${N+1} ${FILE}
 
 ### `tar`
 ```bash
-# Compress `ARCHIVE` to `DIR`
+# Compress `DIR` to `ARCHIVE`
 tar -czvf ${ARCHIVE} ${DIR}
 
 # Extract `ARCHIVE`
@@ -84,6 +93,16 @@ tmux attach -t ${SESSION}
 
 # Create file in netrw
 <%>
+# Create directory in netrw
+<d>
+# Delete file in netrw
+<D>
+```
+
+### `zip`
+```bash
+# Compress `DIR` to `ARCHIVE`
+zip -r ${ARCHIVE} ${DIR}
 ```
 
 ### others
@@ -105,4 +124,7 @@ du -hsc *
 
 # Count lines in `FILE`
 wc -l ${FILE}
+
+# Set visible CUDA devices and run `COMMAND`
+CUDA_VISIBLE_DEVICES=${IDX} ${COMMAND}
 ```
