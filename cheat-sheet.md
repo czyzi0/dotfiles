@@ -26,6 +26,9 @@ git reset --hard origin/${BRANCH}
 
 # Show diff for given `COMMIT`
 git diff ${COMMIT}^!
+
+# Unstage `FILE`
+git reset -- ${FILE}
 ```
 
 ### `grep`
@@ -91,12 +94,16 @@ tmux attach -t ${SESSION}
 # Move focus to next split
 <Ctrl>+<w> <w>
 
-# Create file in netrw
-<%>
-# Create directory in netrw
-<d>
-# Delete file in netrw
-<D>
+# Cut line
+<d> <d>
+# Copy line
+<y> <y>
+
+# In netrw
+<%>  # Create file
+<d>  # Create directory
+<R>  # Rename file/directory
+<D>  # Delete file/directory
 ```
 
 ### `zip`
