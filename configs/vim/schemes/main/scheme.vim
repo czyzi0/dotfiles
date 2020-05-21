@@ -41,6 +41,12 @@ hi cursorim                            ctermfg=240    ctermbg=NONE   cterm=NONE
 hi StorageClass                        ctermfg=255    ctermbg=NONE   cterm=NONE
 hi VertSplit                           ctermfg=236    ctermbg=NONE   cterm=NONE
 
+" netrw
+hi netrwDir                            ctermfg=33     ctermbg=NONE   cterm=NONE
+hi netrwExe                            ctermfg=40     ctermbg=NONE   cterm=NONE
+hi netrwPlain                          ctermfg=240    ctermbg=NONE   cterm=NONE
+hi netrwClassify                       ctermfg=240    ctermbg=NONE   cterm=NONE
+
 " Common Syntax
 hi Normal                              ctermfg=255    ctermbg=NONE   cterm=NONE
 hi Typedef                             ctermfg=255    ctermbg=NONE   cterm=NONE
