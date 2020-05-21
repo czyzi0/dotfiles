@@ -40,12 +40,17 @@ hi Search                              ctermfg=NONE   ctermbg=255    cterm=NONE
 hi cursorim                            ctermfg=240    ctermbg=NONE   cterm=NONE
 hi StorageClass                        ctermfg=255    ctermbg=NONE   cterm=NONE
 hi VertSplit                           ctermfg=236    ctermbg=NONE   cterm=NONE
+hi TabLineFill                         ctermfg=NONE   ctermbg=NONE   cterm=NONE
+hi TabLine                             ctermfg=240    ctermbg=NONE   cterm=NONE
+hi TabLineSel                          ctermfg=255    ctermbg=NONE   cterm=NONE
 
 " netrw
 hi netrwDir                            ctermfg=33     ctermbg=NONE   cterm=NONE
 hi netrwExe                            ctermfg=40     ctermbg=NONE   cterm=NONE
-hi netrwPlain                          ctermfg=240    ctermbg=NONE   cterm=NONE
+hi netrwPlain                          ctermfg=255    ctermbg=NONE   cterm=NONE
 hi netrwClassify                       ctermfg=240    ctermbg=NONE   cterm=NONE
+hi netrwSymLink                        ctermfg=51     ctermbg=NONE   cterm=NONE
+hi netrwLink                           ctermfg=202    ctermbg=NONE   cterm=NONE
 
 " Common Syntax
 hi Normal                              ctermfg=255    ctermbg=NONE   cterm=NONE
