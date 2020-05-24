@@ -88,11 +88,16 @@ tmux attach -t ${SESSION}
 :%s/foo/bar/g
 
 # Vertical split
-<Ctrl>+<w> <v>
+:vsp
 # Horizontal split
-<Ctrl>+<w> <s>
+:sp
 # Move focus to next split
 <Ctrl>+<w> <w>
+
+# Open `FILE` in new tab
+:tabedit ${FILE}
+# Switch to next tab
+<g> <t>
 
 # Cut line
 <d> <d>
@@ -104,6 +109,7 @@ tmux attach -t ${SESSION}
 <d>  # Create directory
 <R>  # Rename file/directory
 <D>  # Delete file/directory
+<->  # Got up directory
 ```
 
 ### `zip`
