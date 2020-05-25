@@ -33,7 +33,13 @@ git reset -- ${FILE}
 
 ### `grep`
 ```bash
-# Find `PATTERN` in `DIR`
+# Find lines with `PATTERN` in `FILE`
+grep ${PATTERN} ${FILE}
+
+# Find lines without `PATTERN` in `DIR`
+grep -v ${PATTERN} ${DIR}
+
+# Find lines with `PATTERN` in `DIR`
 grep -r ${PATTERN} ${DIR}
 ```
 
@@ -140,4 +146,9 @@ wc -l ${FILE}
 
 # Set visible CUDA devices and run `COMMAND`
 CUDA_VISIBLE_DEVICES=${IDX} ${COMMAND}
+```
+
+```python
+# Get PyTorch `device` from `model`
+device = next(model.parameters()).device
 ```
