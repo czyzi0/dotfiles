@@ -90,6 +90,9 @@ tmux attach -t ${SESSION}
 
 ### `vim`
 ```bash
+# Search for `PATTERN`
+/${PATTERN}  # <n> for the next match
+
 # Search and replace in all lines
 :%s/foo/bar/g
 
@@ -143,6 +146,9 @@ du -hsc *
 
 # Count lines in `FILE`
 wc -l ${FILE}
+
+# Repeat `LINE` `N` times
+yes ${LINE} | head -n ${N}
 
 # Set visible CUDA devices and run `COMMAND`
 CUDA_VISIBLE_DEVICES=${IDX} ${COMMAND}
