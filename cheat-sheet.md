@@ -108,6 +108,11 @@ tmux attach -t ${SESSION}
 # Switch to next tab
 <g> <t>
 
+# Undo last change
+<u>
+# Redo last undo
+<Ctrl>+<r>
+
 # Cut line
 <d> <d>
 # Copy line
