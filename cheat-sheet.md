@@ -90,6 +90,9 @@ tmux attach -t ${SESSION}
 
 ### `vim`
 ```bash
+# Go to `LINE_NUMBER`
+::${LINE_NUMBER}
+
 # Search for `PATTERN`
 /${PATTERN}  # <n> for the next match
 
