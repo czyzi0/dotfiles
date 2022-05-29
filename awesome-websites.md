@@ -38,6 +38,7 @@ The list does not focus on any particular topic, it is set of random websites th
 | [Pantheon](http://pantheon.media.mit.edu/) | Interactive catalog of fame |
 | [Parf Edhellen](https://www.elfdict.com/) | Tolkien's elvish dictionary |
 | [PCjs Machines](https://www.pcjs.org/) | Collection of computer simulations written in JavaScript |
+| [Physics Travel Guide](https://physicstravelguide.com/) | Wiki which explains physics concepts in three levels of difficulty |
 | [Pokémon Showdown](https://pokemonshowdown.com/) | Pokémon battle simulator |
 | [SnD Games](http://samdangames.blogspot.com/) | Play Pokémon Tower Defense |
 | [Quick, Draw!](https://quickdraw.withgoogle.com/) | Help teach neural network by adding your drawings to the world’s largest doodling data set |
