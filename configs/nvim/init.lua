@@ -145,9 +145,14 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 
--- Map for easy tab splitting
+-- Easy split creation
 vim.keymap.set('n', '<leader>v', ':Vex!<cr>', { desc = 'Split right' })
 vim.keymap.set('n', '<leader>h', ':Hex<cr>', { desc = 'Split below' })
+-- Easy split navigation
+vim.keymap.set('n', '<C-h>', '<C-w>h', { desc = 'Move to split left' })
+vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Move to split below' })
+vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Move to split above' })
+vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move to split right' })
 
 
 -- Configure treesitter - `:help nvim-treesitter`
