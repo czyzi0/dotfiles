@@ -3,7 +3,9 @@ Various configuration files.
 
 ## Terminal
 ### Linux Mint
-Adjust `Preferences` manually. To run terminal in fullscreen on startup, you need to edit file `/usr/share/applications/org.gnome.Terminal.desktop` and modify lines:
+Just adjust __Preferences__ manually.
+
+But to get terminal running in fullscreen on startup, you need to edit `/usr/share/applications/org.gnome.Terminal.desktop` and replace lines:
 ```
 [Desktop Entry]
 Exec=gnome-terminal
@@ -11,7 +13,7 @@ Exec=gnome-terminal
 [Desktop Action new-window]
 Exec=gnome-terminal --window
 ```
-to:
+with:
 ```
 [Desktop Entry]
 Exec=gnome-terminal --full-screen
