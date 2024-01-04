@@ -22,5 +22,20 @@ Exec=gnome-terminal --full-screen
 Exec=gnome-terminal --full-screen
 ```
 
+## Neovim
+Add these lines to `~/.bashrc`:
+```bash
+# neovim
+export PATH="$HOME/.nvim/nvim-linux64/bin/:$PATH"
+alias vim='nvim'
+alias vi='nvim'
+```
+Then install everything with:
+```bash
+cd nvim
+./setup.sh
+```
+On the first run, support for languages will be installed, it may take a moment.
+
 ## Visual Studio Code
 To install configuration simply copy content of `settings.json` file to your settings in __VSCode__.
