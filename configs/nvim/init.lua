@@ -1,4 +1,3 @@
--- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
@@ -144,6 +143,11 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+
+-- Map for easy tab splitting
+vim.keymap.set('n', '<leader>v', ':Vex!<cr>', { desc = 'Split right' })
+vim.keymap.set('n', '<leader>h', ':Hex<cr>', { desc = 'Split below' })
 
 
 -- Configure treesitter - `:help nvim-treesitter`
