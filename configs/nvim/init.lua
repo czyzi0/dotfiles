@@ -81,39 +81,42 @@ require('lazy').setup({
 }, {})
 
 
+-- Disable netrw banner
+vim.g.netrw_banner = 0
+-- Use tree style listing in netrw
+vim.g.netrw_liststyle = 3
+
+-- Make line numbers default
+vim.wo.number = true
+vim.wo.relativenumber = true
 -- Disable wrapping
 vim.wo.wrap = false
-
 -- Show whitespaces
 vim.opt.listchars:append({ eol = '¬', space = '·', tab = '→ ' })
 vim.opt.list = true
-
 -- Set encoding
 vim.opt.encoding = 'utf-8'
-
 -- Show rulers
 vim.opt.colorcolumn = '79,100'
-
+-- Set scrolloffs
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
 -- Indentation setting
 vim.opt.tabstop = 4       -- Set width of tab
 vim.opt.shiftwidth = 4    -- Set indents width
 vim.bo.softtabstop = 4    -- Set number of columns for tab
 vim.opt.expandtab = true  -- Expand tabs to spaces
 
---
-vim.o.fillchars = 'vert:│'
+-- Set split directions
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 
--- Disable netrw banner
-vim.g.netrw_banner = 0
--- Use tree style listing in netrw
-vim.g.netrw_liststyle = 3
+-- Case-insensitive searching
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- Set highlight on search
 vim.o.hlsearch = false
-
--- Make line numbers default
-vim.wo.number = true
-vim.wo.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
@@ -128,10 +131,6 @@ vim.o.breakindent = true
 
 -- Save undo history
 vim.o.undofile = true
-
--- Case-insensitive searching UNLESS \C or capital in search
-vim.o.ignorecase = true
-vim.o.smartcase = true
 
 -- Keep signcolumn on by default
 vim.wo.signcolumn = 'yes'
