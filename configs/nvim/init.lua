@@ -146,13 +146,19 @@ vim.o.termguicolors = true
 
 
 -- Easy split creation
-vim.keymap.set('n', '<leader>v', ':Vex!<cr>', { desc = 'Split right' })
-vim.keymap.set('n', '<leader>h', ':Hex<cr>', { desc = 'Split below' })
+vim.keymap.set('n', '<leader>v', ':Vex!<CR>', { desc = 'Split right' })
+vim.keymap.set('n', '<leader>h', ':Hex<CR>', { desc = 'Split below' })
 -- Easy split navigation
 vim.keymap.set('n', '<C-h>', '<C-w>h', { desc = 'Move to split left' })
 vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Move to split below' })
 vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Move to split above' })
 vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move to split right' })
+-- Easy vertical split resizing
+vim.keymap.set('n', '<C-Left>', ':vertical resize +3<CR>', { desc = 'Resize vertical split'})
+vim.keymap.set('n', '<C-Right>', ':vertical resize -3<CR>', { desc = 'Resize vertical split'})
+-- Easy horizontal split resizing
+vim.keymap.set('n', '<C-Up>', ':horizontal resize +1<CR>', { desc = 'Resize horizontal split'})
+vim.keymap.set('n', '<C-Down>', ':horizontal resize -1<CR>', { desc = 'Resize horizontal split'})
 
 
 -- Configure treesitter - `:help nvim-treesitter`
