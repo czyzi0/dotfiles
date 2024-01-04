@@ -4,6 +4,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+
 -- Install `lazy.nvim` (https://github.com/folke/lazy.nvim) - `:help lazy.nvim.txt`
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
@@ -17,6 +18,7 @@ if not vim.loop.fs_stat(lazypath) then
   }
 end
 vim.opt.rtp:prepend(lazypath)
+
 
 -- Configure plugins
 require('lazy').setup({
@@ -66,7 +68,18 @@ require('lazy').setup({
       },
     },
   },
+
+  -- Better highlighting and navigation for code
+  {
+    'nvim-treesitter/nvim-treesitter',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter-textobjects',
+    },
+    build = ':TSUpdate',
+  },
+
 }, {})
+
 
 -- Disable wrapping
 vim.wo.wrap = false
@@ -132,3 +145,33 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+
+-- Configure treesitter - `:help nvim-treesitter`
+-- Defer Treesitter setup after first render to improve startup time of 'nvim {filename}'
+-- `:TSInstallInfo` for more info, `:TSInstall ...` to install new language
+vim.defer_fn(function()
+  require('nvim-treesitter.configs').setup {
+    -- Select supported languages
+    ensure_installed = {
+      'bash',
+      'c',
+      'cpp',
+      'css',
+      'dockerfile',
+      'html',
+      'javascript',
+      'json',
+      'latex',
+      'lua',
+      'markdown',
+      'python',
+      'vimdoc',
+      'vim',
+    },
+    -- Do not autoinstall languages that are not installed
+    auto_install = false,
+
+    highlight = { enable = true },
+  }
+end, 0)
