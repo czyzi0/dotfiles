@@ -92,6 +92,8 @@ vim.o.fillchars = 'vert:│'
 
 -- Disable netrw banner
 vim.g.netrw_banner = 0
+-- Use tree style listing in netrw
+vim.g.netrw_liststyle = 3
 
 -- Set highlight on search
 vim.o.hlsearch = false
