@@ -171,6 +171,12 @@ vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv')
 -- Easy global replace - TODO: Check if this is helpful
 vim.keymap.set('v', '<leader>r', '"hy:%s/<C-r>h//g<left><left>')
 
+-- For habit breaking
+vim.keymap.set({'n', 'i', 'v'}, '<Up>', '<NOP>')
+vim.keymap.set({'n', 'i', 'v'}, '<Down>', '<NOP>')
+vim.keymap.set({'n', 'i', 'v'}, '<Left>', '<NOP>')
+vim.keymap.set({'n', 'i', 'v'}, '<Right>', '<NOP>')
+
 
 -- Configure treesitter - `:help nvim-treesitter`
 -- Defer Treesitter setup after first render to improve startup time of 'nvim {filename}'
