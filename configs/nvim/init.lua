@@ -160,6 +160,17 @@ vim.keymap.set('n', '<C-Right>', ':vertical resize -3<CR>', { desc = 'Resize ver
 vim.keymap.set('n', '<C-Up>', ':horizontal resize +1<CR>', { desc = 'Resize horizontal split'})
 vim.keymap.set('n', '<C-Down>', ':horizontal resize -1<CR>', { desc = 'Resize horizontal split'})
 
+-- Center cursor after scrolling half the page
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
+-- Move selected lines up and down
+vim.keymap.set('v', 'J', ':m \'>+1<CR>gv=gv')
+vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv')
+
+-- Easy global replace - TODO: Check if this is helpful
+vim.keymap.set('v', '<leader>r', '"hy:%s/<C-r>h//g<left><left>')
+
 
 -- Configure treesitter - `:help nvim-treesitter`
 -- Defer Treesitter setup after first render to improve startup time of 'nvim {filename}'
