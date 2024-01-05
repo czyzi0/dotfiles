@@ -2,13 +2,14 @@
 
 cd "${BASH_SOURCE[1]}"  # move to script's directory
 
+nvim_download_link="https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz"
 nvim_filename="nvim-linux64.tar.gz"
 checksum_filename="checksum.sha256"
 
 if [ ! -f $nvim_filename ]; then
     echo "Downloading stable Neovim..."
-    wget "https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz" --quiet --show-progress
-    if [ ! -f "nvim-linux64.tar.gz" ]; then
+    wget $nvim_download_link --quiet --show-progress
+    if [ ! -f $nvim_filename ]; then
         echo "Download failed, exiting..."
         exit
     else
@@ -24,6 +25,7 @@ echo -n "Removing existing Neovim... "
 rm -rf "$HOME/.nvim/"
 rm -rf "$HOME/.config/nvim/"
 rm -rf "$HOME/.local/share/nvim/"
+rm -rf "$HOME/.local/state/nvim/"
 echo "OK"
 
 echo -n "Installing... "
