@@ -82,8 +82,8 @@ require('lazy').setup({
 
 -- Disable netrw banner
 vim.g.netrw_banner = 0
--- Use tree style listing in netrw
-vim.g.netrw_liststyle = 3
+-- Use basic style listing in netrw
+vim.g.netrw_liststyle = 0
 
 -- Make line numbers default
 vim.wo.number = true
@@ -113,6 +113,11 @@ vim.opt.splitright = true
 -- Case-insensitive searching
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+-- Recursive searching
+vim.opt.path:append '**'
+
+-- Show wildcard menu
+vim.opt.wildmenu = true
 
 -- Set highlight on search
 vim.o.hlsearch = false
