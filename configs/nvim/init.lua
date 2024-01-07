@@ -169,6 +169,12 @@ vim.keymap.set('n', '<C-Down>', ':horizontal resize -1<CR>', { desc = 'Resize ho
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
+-- Easy search for files
+vim.keymap.set('n', '<leader>f', ':find ', { desc = 'Search for file' })
+
+-- Switch to next buffer
+vim.keymap.set('n', '<leader>b', ':bnext<CR>')
+
 -- Move selected lines up and down
 vim.keymap.set('v', 'J', ':m \'>+1<CR>gv=gv')
 vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv')
