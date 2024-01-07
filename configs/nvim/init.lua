@@ -165,15 +165,16 @@ vim.keymap.set('n', '<C-Right>', ':vertical resize -3<CR>', { desc = 'Resize ver
 vim.keymap.set('n', '<C-Up>', ':horizontal resize +1<CR>', { desc = 'Resize horizontal split'})
 vim.keymap.set('n', '<C-Down>', ':horizontal resize -1<CR>', { desc = 'Resize horizontal split'})
 
--- Center cursor after scrolling half the page
-vim.keymap.set('n', '<C-d>', '<C-d>zz')
-vim.keymap.set('n', '<C-u>', '<C-u>zz')
+-- Easy buffer navigation
+vim.keymap.set('n', '<leader>,', ':bprevious<CR>')
+vim.keymap.set('n', '<leader>.', ':bnext<CR>')
 
 -- Easy search for files
 vim.keymap.set('n', '<leader>f', ':find ', { desc = 'Search for file' })
 
--- Switch to next buffer
-vim.keymap.set('n', '<leader>b', ':bnext<CR>')
+-- Center cursor after scrolling half the page
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
 -- Move selected lines up and down
 vim.keymap.set('v', 'J', ':m \'>+1<CR>gv=gv')
