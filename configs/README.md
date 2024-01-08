@@ -22,6 +22,12 @@ Exec=gnome-terminal --full-screen
 Exec=gnome-terminal --full-screen
 ```
 
+## tmux
+Just copy configuration to home directory:
+```bash
+cp .tmux.conf ~/
+```
+
 ## Neovim
 Add these lines to `~/.bashrc`:
 ```bash
