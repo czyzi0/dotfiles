@@ -22,6 +22,12 @@ Exec=gnome-terminal --full-screen
 Exec=gnome-terminal --full-screen
 ```
 
+Also to automatically start in tmux put this at the end of your `.bashrc` file:
+```bash
+# Start in tmux automatically
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session; }
+```
+
 ## tmux
 Just copy configuration to home directory:
 ```bash
