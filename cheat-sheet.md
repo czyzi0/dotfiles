@@ -152,6 +152,9 @@ du -hs
 # Check size of all files and directories in current directory
 du -hsc *
 
+# Check what processes are running on given resource (e.g. drive)
+lsof ${DIR}
+
 # Count lines in `FILE`
 wc -l ${FILE}
 
