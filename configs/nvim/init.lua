@@ -216,5 +216,6 @@ vim.defer_fn(function()
     auto_install = false,
 
     highlight = { enable = true },
+    indent = { enable = true },
   }
 end, 0)
