@@ -183,11 +183,14 @@ vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv')
 -- Easy global replace - TODO: Check if this is helpful
 vim.keymap.set('v', '<leader>r', '"hy:%s/<C-r>h//g<left><left>')
 
+-- Disable space in normal and visual modes
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<NOP>', { silent = true })
+
 -- For habit breaking
-vim.keymap.set({'n', 'i', 'v'}, '<Up>', '<NOP>')
-vim.keymap.set({'n', 'i', 'v'}, '<Down>', '<NOP>')
-vim.keymap.set({'n', 'i', 'v'}, '<Left>', '<NOP>')
-vim.keymap.set({'n', 'i', 'v'}, '<Right>', '<NOP>')
+vim.keymap.set({ 'n', 'i', 'v' }, '<Up>', '<NOP>')
+vim.keymap.set({ 'n', 'i', 'v' }, '<Down>', '<NOP>')
+vim.keymap.set({ 'n', 'i', 'v' }, '<Left>', '<NOP>')
+vim.keymap.set({ 'n', 'i', 'v' }, '<Right>', '<NOP>')
 
 
 -- Configure treesitter - `:help nvim-treesitter`
