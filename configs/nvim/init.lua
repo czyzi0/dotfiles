@@ -24,6 +24,12 @@ require('lazy').setup({
   -- Detect tabstops and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- Easy commenting - https://github.com/numToStr/Comment.nvim
+  {
+    'numToStr/Comment.nvim',
+    opts = { mappings = { extra = false } },
+  },
+
   -- Color scheme - `:help sonokai.txt`
   {
     'sainnhe/sonokai',
