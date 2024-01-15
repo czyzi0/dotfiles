@@ -165,15 +165,19 @@ vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Move to split below' })
 vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Move to split above' })
 vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move to split right' })
 -- Easy vertical split resizing
-vim.keymap.set('n', '<C-Left>', ':vertical resize +3<CR>', { desc = 'Resize vertical split'})
-vim.keymap.set('n', '<C-Right>', ':vertical resize -3<CR>', { desc = 'Resize vertical split'})
+vim.keymap.set('n', '<C-Left>', ':vertical resize +3<CR>', { desc = 'Resize vertical split' })
+vim.keymap.set('n', '<C-Right>', ':vertical resize -3<CR>', { desc = 'Resize vertical split' })
 -- Easy horizontal split resizing
-vim.keymap.set('n', '<C-Up>', ':horizontal resize +1<CR>', { desc = 'Resize horizontal split'})
-vim.keymap.set('n', '<C-Down>', ':horizontal resize -1<CR>', { desc = 'Resize horizontal split'})
+vim.keymap.set('n', '<C-Up>', ':horizontal resize +1<CR>', { desc = 'Resize horizontal split' })
+vim.keymap.set('n', '<C-Down>', ':horizontal resize -1<CR>', { desc = 'Resize horizontal split' })
 
 -- Easy buffer navigation
 vim.keymap.set('n', '<leader>,', ':bprevious<CR>')
 vim.keymap.set('n', '<leader>.', ':bnext<CR>')
+
+-- Adding empty line below or above in normal mode
+vim.keymap.set('n', '<leader>o', ':call append(line("."), "")<CR>', { desc = 'Empty line below in normal mode' })
+vim.keymap.set('n', '<leader>O', ':call append(line(".")-1, "")<CR>', { desc = 'Empty line above in normal mode' })
 
 -- Easy search for files
 vim.keymap.set('n', '<leader>f', ':find ', { desc = 'Search for file' })
