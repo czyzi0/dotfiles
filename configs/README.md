@@ -33,6 +33,7 @@ Just copy configuration to home directory:
 ```bash
 cp .tmux.conf ~/
 ```
+Proper displaying of statusbar requires `cut`, `df`, `head`, `sed`, `tail` and `uptime` commands to be available.
 
 ## Neovim
 Add these lines to `~/.bashrc`:
