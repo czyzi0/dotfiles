@@ -1,2 +1,20 @@
+[user]
+	email = ${EMAIL}
+	name = ${USER}
+
 [alias]
+	# Short log
+	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	# Pretty tree
 	tree = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%aD%C(reset) - %C(dim white)%an <%ae>%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n'''
+
+	# Common commands
+	s = status
+	a = add
+	cm = commit --message
+	co = checkout
+	cob = checkout -b
+	f = fetch --prune --all
+	p = pull
+	d = diff
+	r = restore --staged
