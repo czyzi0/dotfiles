@@ -8,6 +8,9 @@
 	# Pretty tree
 	tree = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%aD%C(reset) - %C(dim white)%an <%ae>%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n'''
 
+	# Nice branch list
+	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+
 	# Common commands
 	s = status
 	a = add
@@ -18,5 +21,5 @@
 	d = diff
 	r = restore --staged
 
-	# Back up one commit
-	back = reset --soft HEAD~1
+	# Undo last commit
+	undo = reset --soft HEAD~1
