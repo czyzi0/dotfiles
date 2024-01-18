@@ -1,6 +1,6 @@
 [user]
-	email = ${EMAIL}
-	name = ${USER}
+	email = email@mail.com
+	name = user
 
 [alias]
 	# Short log
