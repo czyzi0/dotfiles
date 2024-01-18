@@ -52,3 +52,12 @@ On the first run, support for languages will be installed, it may take a moment.
 
 ## Visual Studio Code
 To install configuration simply copy content of `settings.json` file to your settings in __VSCode__.
+
+## bash
+Put these in your `.bashrc` to have some nice commands/aliases:
+```bash
+# weather
+weather() {
+  curl -s "wttr.in/${1:-Warsaw}?F"
+}
+```
