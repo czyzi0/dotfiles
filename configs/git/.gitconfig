@@ -15,7 +15,5 @@
 	co = checkout
 	cob = checkout -b
 	f = fetch --prune --all
-	pl = pull
-	ps = push
 	d = diff
 	r = restore --staged
