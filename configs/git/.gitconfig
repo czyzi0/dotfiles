@@ -17,3 +17,6 @@
 	f = fetch --prune --all
 	d = diff
 	r = restore --staged
+
+	# Back up one commit
+	back = reset --soft HEAD~1
