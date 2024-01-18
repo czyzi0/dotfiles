@@ -56,6 +56,9 @@ To install configuration simply copy content of `settings.json` file to your set
 ## bash
 Put these in your `.bashrc` to have some nice commands/aliases:
 ```bash
+# useful aliases
+alias c='clear'
+
 # weather
 weather() {
   curl -s "wttr.in/${1:-Warsaw}?F"
