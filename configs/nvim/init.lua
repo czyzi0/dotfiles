@@ -93,6 +93,8 @@ require('lazy').setup({
 vim.g.netrw_banner = 0
 -- Use basic style listing in netrw
 vim.g.netrw_liststyle = 0
+-- Show line numbers in netrw
+vim.g.netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 -- Make line numbers default
 vim.wo.number = true
