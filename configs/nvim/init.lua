@@ -24,6 +24,9 @@ require('lazy').setup({
   -- Detect tabstops and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- Delete buffers without changing window layout
+  'moll/vim-bbye',
+
   -- Easy commenting - https://github.com/numToStr/Comment.nvim
   {
     'numToStr/Comment.nvim',
