@@ -59,6 +59,7 @@ Put these in your `.bashrc` to have some nice commands/aliases:
 ```bash
 # useful aliases
 alias c='clear'
+alias tree='tree -CAhF --dirsfirst'
 
 # weather
 weather() {
