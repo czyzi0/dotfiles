@@ -36,6 +36,8 @@ cp .tmux.conf ~/
 Proper displaying of statusbar requires `cut`, `df`, `head`, `rev`, `sed`, `tail` and `uptime` commands to be available.
 
 ## Neovim
+It may be worth to modify your keyboard repeat setting to shorten repeat delay and make repeat faster. You can also remap Caps Lock to be additional Esc.
+
 Add these lines to `~/.bashrc`:
 ```bash
 # neovim
