@@ -86,6 +86,30 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 
+  -- LSP stuff
+  {
+    'neovim/nvim-lspconfig',
+    dependencies = {
+      -- Package managers for LSPs
+      { 'williamboman/mason.nvim', config = true },
+      'williamboman/mason-lspconfig.nvim',
+    },
+  },
+
+  -- Autocompletion things
+  {
+    'hrsh7th/nvim-cmp',
+    dependencies = {
+      -- Snippet engine and completion source
+      'L3MON4D3/LuaSnip',
+      'saadparwaiz1/cmp_luasnip',
+
+      -- Autocompletion from LSP
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-path',
+    },
+  },
+
 }, {})
 
 
@@ -112,10 +136,10 @@ vim.opt.colorcolumn = '79,100'
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 -- Indentation setting
-vim.opt.tabstop = 4       -- Set width of tab
-vim.opt.shiftwidth = 4    -- Set indents width
-vim.bo.softtabstop = 4    -- Set number of columns for tab
-vim.opt.expandtab = true  -- Expand tabs to spaces
+vim.opt.tabstop = 4      -- Set width of tab
+vim.opt.shiftwidth = 4   -- Set indents width
+vim.bo.softtabstop = 4   -- Set number of columns for tab
+vim.opt.expandtab = true -- Expand tabs to spaces
 
 -- Set split directions
 vim.opt.splitbelow = true
@@ -154,8 +178,8 @@ vim.wo.signcolumn = 'yes'
 vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 
--- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menuone,noselect'
+-- Disable built-in Autocompletion
+vim.o.complete = false
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
@@ -237,3 +261,103 @@ vim.defer_fn(function()
     indent = { enable = true },
   }
 end, 0)
+
+
+-- LSP configuration
+require('mason').setup()
+
+local on_attach = function(_, bufnr)
+  -- Rename variable
+  vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Rename' })
+
+  -- Jump
+  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
+
+  -- Documentation keymaps
+  vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Documentation' })
+  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { desc = 'Documentation' })
+
+  -- Command `:Format` local to the buffer
+  vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
+    vim.lsp.buf.format()
+  end, { desc = 'Format current buffer' })
+end
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+
+local servers = {
+  lua_ls = {
+    Lua = {
+      workspace = { checkThirdParty = false },
+      telemetry = { enable = false },
+      diagnostics = { globals = { 'vim' } },
+    },
+  },
+}
+
+local handlers = {
+  function(server_name)
+    require('lspconfig')[server_name].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      settings = servers[server_name],
+      filetype = (servers[server_name] or {}).filetypes,
+    })
+  end,
+}
+
+require('mason-lspconfig').setup({
+  ensure_installed = vim.tbl_keys(servers),
+  handlers = handlers,
+})
+
+
+-- Autocompletion configuration - `:help cmp`
+local cmp = require('cmp')
+local luasnip = require('luasnip')
+luasnip.config.setup({})
+cmp.setup({
+  snippet = {
+    expand = function(args)
+      luasnip.lsp_expand(args.body)
+    end,
+  },
+  completion = {
+    completeopt = 'menu,menuone,noinsert',
+  },
+  mapping = {
+    ['<C-n>'] = cmp.mapping.select_next_item(),
+    ['<C-p>'] = cmp.mapping.select_prev_item(),
+    ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+    ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    ['<C-Space>'] = cmp.mapping.complete({}),
+    ['<CR>'] = cmp.mapping.confirm({
+      behavior = cmp.ConfirmBehavior.Replace,
+      select = true,
+    }),
+    ['<Tab>'] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_next_item()
+      elseif luasnip.expand_or_locally_jumpable() then
+        luasnip.expand_or_jump()
+      else
+        fallback()
+      end
+    end, { 'i', 's' }),
+    ['<S-Tab>'] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_prev_item()
+      elseif luasnip.locally_jumpable(-1) then
+        luasnip.jump(-1)
+      else
+        fallback()
+      end
+    end, { 'i', 's' }),
+  },
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'luasnip' },
+    { name = 'path' },
+  },
+})
