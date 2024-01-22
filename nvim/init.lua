@@ -185,6 +185,14 @@ vim.o.complete = false
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
+-- Use groovy syntax for highlighting Jenkinsfile
+vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter' }, {
+  pattern = { 'Jenkinsfile' },
+  callback = function()
+    vim.o.filetype = 'groovy'
+  end,
+})
+
 
 -- Easy split creation
 vim.keymap.set('n', '<leader>v', ':Vex!<CR>', { desc = 'Split right' })
