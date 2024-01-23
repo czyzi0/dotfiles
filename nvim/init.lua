@@ -253,6 +253,7 @@ vim.defer_fn(function()
       'cpp',
       'css',
       'dockerfile',
+      'groovy',
       'html',
       'javascript',
       'json',
