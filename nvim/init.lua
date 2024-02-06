@@ -304,6 +304,7 @@ local servers = {
       diagnostics = { globals = { 'vim' } },
     },
   },
+  pyright = {},
 }
 
 local handlers = {
