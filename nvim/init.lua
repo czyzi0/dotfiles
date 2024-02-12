@@ -188,9 +188,7 @@ vim.o.termguicolors = true
 -- Use groovy syntax for highlighting Jenkinsfile
 vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter' }, {
   pattern = { 'Jenkinsfile' },
-  callback = function()
-    vim.o.filetype = 'groovy'
-  end,
+  callback = function() vim.o.filetype = 'groovy' end,
 })
 
 
@@ -334,9 +332,7 @@ local luasnip = require('luasnip')
 luasnip.config.setup({})
 cmp.setup({
   snippet = {
-    expand = function(args)
-      luasnip.lsp_expand(args.body)
-    end,
+    expand = function(args) luasnip.lsp_expand(args.body) end,
   },
   completion = {
     completeopt = 'menu,menuone,noinsert',
