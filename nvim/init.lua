@@ -33,6 +33,20 @@ require('lazy').setup({
     opts = { mappings = { extra = false } },
   },
 
+  -- Markdown preview
+  {
+    'iamcco/markdown-preview.nvim',
+    cmd = { 'MarkdownPreview', 'MarkdownPreviewStop' },
+    build = 'cd app && npm install',
+    config = function()
+      vim.g.mkdp_filetypes = { 'markdown' }
+      vim.g.mkdp_open_to_the_world = 1
+      vim.g.mkdp_echo_preview_url = 1
+      vim.g.mkdp_theme = 'dark'
+    end,
+    ft = { 'markdown' },
+  },
+
   -- Color scheme - `:help sonokai.txt`
   {
     'sainnhe/sonokai',
