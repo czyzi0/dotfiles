@@ -236,9 +236,11 @@ vim.keymap.set('n', '<leader>f', ':find ', { desc = 'Search for file' })
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
--- Move to diagnostic messages
-vim.keymap.set('n', 'd[', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
-vim.keymap.set('n', 'd]', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
+-- Diagnostic messages
+vim.keymap.set('n', '<leader>d[', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
+vim.keymap.set('n', '<leader>d]', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
+vim.keymap.set('n', '<leader>dl', vim.diagnostic.setloclist, { desc = 'Show diagnostics list' })
+vim.keymap.set('n', '<A-k>', vim.diagnostic.open_float, { desc = 'Show diagnostic info' })
 
 -- Move selected lines up and down
 vim.keymap.set('v', 'J', ':m \'>+1<CR>gv=gv')
@@ -298,7 +300,7 @@ local on_attach = function(_, bufnr)
 
   -- Navigation
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
-  vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = 'Show references' })
+  vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = 'Show references list' })
 
   -- Documentation keymaps
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Show documentation' })
