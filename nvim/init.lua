@@ -296,12 +296,13 @@ local on_attach = function(_, bufnr)
   -- Rename variable
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Rename' })
 
-  -- Jump
+  -- Navigation
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
+  vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = 'Show references' })
 
   -- Documentation keymaps
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Documentation' })
-  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { desc = 'Documentation' })
+  vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Show documentation' })
+  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { desc = 'Show documentation' })
 
   -- Command `:Format` local to the buffer
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
