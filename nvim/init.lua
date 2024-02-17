@@ -296,6 +296,7 @@ require('mason').setup()
 
 local on_attach = function(_, bufnr)
   -- Keymaps
+  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
   vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
   vim.keymap.set('n', '<leader>gl', vim.lsp.buf.references, { desc = 'Show references list' })
   vim.keymap.set('n', '<leader>gr', vim.lsp.buf.rename, { desc = 'Rename' })
