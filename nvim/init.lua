@@ -295,14 +295,11 @@ end, 0)
 require('mason').setup()
 
 local on_attach = function(_, bufnr)
-  -- Rename variable
-  vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Rename' })
-
-  -- Navigation
-  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
-  vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = 'Show references list' })
-
-  -- Documentation keymaps
+  -- Keymaps
+  vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
+  vim.keymap.set('n', '<leader>gl', vim.lsp.buf.references, { desc = 'Show references list' })
+  vim.keymap.set('n', '<leader>gr', vim.lsp.buf.rename, { desc = 'Rename' })
+  -- Documentation
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Show documentation' })
   vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { desc = 'Show documentation' })
 
