@@ -251,8 +251,8 @@ vim.keymap.set("n", "<leader>dl", vim.diagnostic.setloclist, { desc = "Show diag
 vim.keymap.set("n", "<A-k>", vim.diagnostic.open_float, { desc = "Show diagnostic info" })
 
 -- Move selected lines up and down
-vim.keymap.set("v", "J", ":m \">+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m \"<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Easy global replace - TODO: Check if this is helpful
 vim.keymap.set("v", "<leader>r", "\"hy:%s/<C-r>h//g<left><left>")
