@@ -29,6 +29,7 @@ Put these in your `.bashrc` to have some nice commands/aliases:
 # useful aliases
 alias c='clear'
 alias tree='tree -CAhF --dirsfirst'
+alias sc='screenkey --window -s small -g 550x1200 --bak-mode normal --mods-mode emacs --bg-color black --opacity 1 &'
 
 # weather
 weather() {
