@@ -218,16 +218,22 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 vim.keymap.set("n", "<leader>v", ":Vex!<CR>", { desc = "Split right" })
 vim.keymap.set("n", "<leader>h", ":Hex<CR>", { desc = "Split below" })
 -- Easy split navigation
-vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to split left" })
-vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to split below" })
-vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to split above" })
-vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to split right" })
--- Easy vertical split resizing
-vim.keymap.set("n", "<C-Left>", ":vertical resize +3<CR>", { desc = "Resize vertical split" })
-vim.keymap.set("n", "<C-Right>", ":vertical resize -3<CR>", { desc = "Resize vertical split" })
--- Easy horizontal split resizing
-vim.keymap.set("n", "<C-Up>", ":horizontal resize +1<CR>", { desc = "Resize horizontal split" })
-vim.keymap.set("n", "<C-Down>", ":horizontal resize -1<CR>", { desc = "Resize horizontal split" })
+vim.keymap.set("n", "<C-Up>", "<C-w>k", { desc = "Move to split above" })
+vim.keymap.set("n", "<C-Right>", "<C-w>l", { desc = "Move to split right" })
+vim.keymap.set("n", "<C-Down>", "<C-w>j", { desc = "Move to split below" })
+vim.keymap.set("n", "<C-Left>", "<C-w>h", { desc = "Move to split left" })
+-- Easy split resizing
+vim.keymap.set("n", "<S-Up>", ":horizontal resize +1<CR>", { desc = "Resize horizontal split" })
+vim.keymap.set("n", "<S-Right>", ":vertical resize -3<CR>", { desc = "Resize vertical split" })
+vim.keymap.set("n", "<S-Down>", ":horizontal resize -1<CR>", { desc = "Resize horizontal split" })
+vim.keymap.set("n", "<S-Left>", ":vertical resize +3<CR>", { desc = "Resize vertical split" })
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "netrw" },
+  callback = function()
+    vim.keymap.set("n", "<S-Up>", ":horizontal resize +1<CR>", { buffer = true })
+    vim.keymap.set("n", "<S-Down>", ":horizontal resize -1<CR>", { buffer = true })
+  end,
+})
 
 -- Easy buffer navigation
 vim.keymap.set("n", "<leader>,", ":bprevious<CR>")
@@ -358,13 +364,13 @@ cmp.setup({
     expand = function(args) luasnip.lsp_expand(args.body) end,
   },
   completion = {
-    completeopt = "menu,menuone,noinsert",
+    completeopt = "menu,menuone,noinsert,noselect",
   },
   mapping = {
     ["<C-Space>"] = cmp.mapping.complete({}),
     ["<CR>"] = cmp.mapping.confirm({
-      behavior = cmp.ConfirmBehavior.Replace,
-      select = true,
+      behavior = cmp.ConfirmBehavior.Insert,
+      select = false,
     }),
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
