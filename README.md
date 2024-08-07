@@ -28,6 +28,7 @@ Put these in your `.bashrc` to have some nice commands/aliases:
 ```bash
 # useful aliases
 alias c='clear'
+alias ccat='pygmentize -g -O style=monokai'
 alias tree='tree -CAhF --dirsfirst'
 alias sc='screenkey --window -s small -g 550x1200 --bak-mode normal --mods-mode emacs --bg-color black --opacity 1 &'
 
