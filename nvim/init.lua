@@ -201,9 +201,6 @@ vim.wo.signcolumn = "yes"
 vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 
--- Disable built-in Autocompletion
-vim.o.complete = false
-
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
