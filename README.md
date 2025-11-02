@@ -58,11 +58,11 @@ It may be worth to modify your keyboard repeat setting to shorten repeat delay a
 Add these lines to `~/.bashrc`:
 ```bash
 # neovim
-export PATH="$HOME/.nvim/nvim-linux64/bin/:$PATH"
+export PATH="$HOME/.nvim/nvim-linux-x86_64/bin/:$PATH"
 alias vim='nvim'
 alias vi='nvim'
-alias svim='sudo $HOME/.nvim/nvim-linux64/bin/nvim'
-alias svi='sudo $HOME/.nvim/nvim-linux64/bin/nvim'
+alias svim='sudo $HOME/.nvim/nvim-linux-x86_64/bin/nvim'
+alias svi='sudo $HOME/.nvim/nvim-linux-x86_64/bin/nvim'
 ```
 Then install everything with:
 ```bash

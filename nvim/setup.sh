@@ -2,8 +2,8 @@
 
 cd "${BASH_SOURCE[1]}"  # move to script's directory
 
-nvim_download_link="https://github.com/neovim/neovim/releases/download/v0.10.2/nvim-linux64.tar.gz"
-nvim_filename="nvim-linux64.tar.gz"
+nvim_download_link="https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-x86_64.tar.gz"
+nvim_filename="nvim-linux-x86_64.tar.gz"
 checksum_filename="checksum.sha256"
 
 if [ ! -f $nvim_filename ]; then
