@@ -34,7 +34,7 @@ alias sc='screenkey --window -s small -g 550x1200 --bak-mode normal --mods-mode 
 
 # weather
 weather() {
-  curl -s "wttr.in/${1:-Warsaw}?F"
+    curl -s "wttr.in/${1:-Warsaw}?F"
 }
 ```
 
