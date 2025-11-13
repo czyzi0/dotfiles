@@ -38,6 +38,29 @@ weather() {
 }
 ```
 
+### virtualenv
+Put these in your `.bashrc` to have useful commands:
+```bash
+# virtualenv
+venv_create() {
+    python3 -m venv .venv
+}
+activate() {
+    if [[ -d .venv ]]; then
+	source .venv/bin/activate
+	return
+    fi
+
+    venv_path=$(poetry env info --path 2> /dev/null)
+    if [[ -n "$venv_path" && -d "$venv_path" ]]; then
+	source "$venv_path/bin/activate"
+    else
+	echo "No virtualenv was found"
+	return 1
+    fi
+}
+```
+
 ### tmux
 To automatically start in tmux put this at the end of your `.bashrc` file:
 ```bash
