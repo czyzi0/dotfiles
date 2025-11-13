@@ -47,16 +47,16 @@ venv_create() {
 }
 activate() {
     if [[ -d .venv ]]; then
-	source .venv/bin/activate
-	return
+        source .venv/bin/activate
+        return
     fi
 
     venv_path=$(poetry env info --path 2> /dev/null)
     if [[ -n "$venv_path" && -d "$venv_path" ]]; then
-	source "$venv_path/bin/activate"
+        source "$venv_path/bin/activate"
     else
-	echo "No virtualenv was found"
-	return 1
+        echo "No virtualenv was found"
+        return 1
     fi
 }
 ```
